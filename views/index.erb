@@ -1,1 +1,22 @@
+<!DOCTYPE html>
 
+<html>
+  <head>
+  <title>Travle From Home</title>
+ <meta charset="UTF-8">
+  </head>
+  
+  <body>
+    <% @paths=paths %>
+    <% @paths.each do |path| %>
+  <%= link_to image_tag(path), home_path %>
+<% end %>
+
+<div class="carousel">
+  <% @paths.each do |path| %>
+    <%= link_to image_tag(path), home_path %>
+  <% end %>
+</div >
+</body>
+
+</html>
